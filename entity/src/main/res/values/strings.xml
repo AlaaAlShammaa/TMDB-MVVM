@@ -1,0 +1,3 @@
+<resources>
+  <string name="database">TmdbMVVM.db</string>
+</resources>
