@@ -119,7 +119,6 @@ object Config {
         }
 
         object Misc {
-            // TODO(#282): upgrade when the min API level is 21
             private const val retrofitVersion = "2.6.4"
             private const val poiVersion = "3.17"
 
@@ -154,6 +153,7 @@ object Config {
             const val moshi = "com.squareup.moshi:moshi-kotlin:1.9.2"
             const val moshiConverter = "com.squareup.retrofit2:converter-moshi:2.9.0"
             const val moshiCodeGen = "com.squareup.moshi:moshi-kotlin-codegen:1.9.2"
+            const val timber = "com.jakewharton.timber:timber:4.7.1"
 
             val koin by lazy {
                 listOf(

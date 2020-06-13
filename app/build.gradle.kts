@@ -85,6 +85,7 @@ dependencies {
 
     implementation(Config.Libs.Misc.glide)
     implementation(Config.Libs.Misc.glideRv)
+    implementation(Config.Libs.Misc.timber)
     api(Config.Libs.Misc.moshiConverter)
     Config.Libs.Misc.koin.forEach { implementation(it) }
 
