@@ -73,6 +73,8 @@ dependencies {
     implementation(Config.Libs.Jetpack.constraint)
     implementation(Config.Libs.Jetpack.fragment)
     implementation(Config.Libs.Jetpack.rv)
+    implementation(Config.Libs.Jetpack.room)
+    kapt(Config.Libs.Jetpack.roomCompiler)
     Config.Libs.Jetpack.lifecycle.forEach { implementation(it) }
 
 
@@ -82,6 +84,8 @@ dependencies {
 
     implementation(Config.Libs.Misc.glide)
     implementation(Config.Libs.Misc.glideRv)
+    api(Config.Libs.Misc.moshiConverter)
+    Config.Libs.Misc.koin.forEach { implementation(it) }
 
 
 }

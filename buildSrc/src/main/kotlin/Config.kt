@@ -6,7 +6,7 @@ object Config {
     object SdkVersions {
         const val compile = 29
         const val target = 29
-        const val min = 16
+        const val min = 21
     }
 
     object AppVersions {
@@ -17,6 +17,7 @@ object Config {
     object Plugins {
         const val android = "com.android.tools.build:gradle:4.0.0"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        const val koin = "org.koin:koin-gradle-plugin:2.1.6"
 
         const val google = "com.google.gms:google-services:4.3.3"
         const val firebase = "com.google.firebase:perf-plugin:1.3.1"
@@ -73,7 +74,8 @@ object Config {
             val roomTesting by lazy {
                 val version = "2.2.5"
                 listOf(
-                    "androidx.room:room-testing:$version")
+                    "androidx.room:room-testing:$version"
+                )
             }
 
             val work by lazy {
@@ -123,15 +125,17 @@ object Config {
 
             private const val glideVersion = "4.11.0"
 
-            const val junitVersion= "4.12"
-            const val androidxTest= "1.1.0"
-            const val unitTestCoreVersion= "1.2.0"
-            const val robolectricVersion="4.3"
-            const val androidxTestRules= "1.2.0-alpha04"
-            const val mockWebServerVersion= "3.9.0"
-            const val mockitoKotlinVersion= "2.1.0"
-            const val archCompomentVersion= "2.0.0"
-            const val okhttpVersion= "4.1.0"
+            const val junitVersion = "4.12"
+            const val androidxTest = "1.1.0"
+            const val unitTestCoreVersion = "1.2.0"
+            const val robolectricVersion = "4.3"
+            const val androidxTestRules = "1.2.0-alpha04"
+            const val mockWebServerVersion = "3.9.0"
+            const val mockitoKotlinVersion = "2.1.0"
+            const val archCompomentVersion = "2.0.0"
+            const val okhttpVersion = "4.1.0"
+            const val moshiVersion = "1.9.2"
+            const val koinVersion = "2.1.6"
 
             const val leakCanary = "com.squareup.leakcanary:leakcanary-android:2.2"
             const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
@@ -147,6 +151,18 @@ object Config {
             const val permissions = "pub.devrel:easypermissions:3.0.0"
             const val mttp = "uk.co.samuelwall:material-tap-target-prompt:3.0.0"
             const val licenses = "net.yslibrary.licenseadapter:licenseadapter:3.0.0"
+            const val moshi = "com.squareup.moshi:moshi-kotlin:1.9.2"
+            const val moshiConverter = "com.squareup.retrofit2:converter-moshi:2.9.0"
+            const val moshiCodeGen = "com.squareup.moshi:moshi-kotlin-codegen:1.9.2"
+
+            val koin by lazy {
+                listOf(
+                    "org.koin:koin-androidx-scope:$koinVersion",
+                    "org.koin:koin-androidx-viewmodel:$koinVersion",
+                    "org.koin:koin-androidx-fragment:$koinVersion",
+                    "org.koin:koin-androidx-ext:$koinVersion"
+                )
+            }
 
             val unitTesting by lazy {
                 listOf(
