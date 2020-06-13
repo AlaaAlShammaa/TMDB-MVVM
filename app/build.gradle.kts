@@ -64,6 +64,7 @@ android {
 dependencies {
     implementation(project(":entity"))
     implementation(project(":network"))
+    implementation(project(":app-ui"))
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
