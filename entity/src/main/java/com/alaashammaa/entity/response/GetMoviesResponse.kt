@@ -2,17 +2,15 @@ package com.alaashammaa.entity.response
 
 
 import com.alaashammaa.entity.entities.Movie
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import com.google.gson.annotations.SerializedName
 
-@JsonClass(generateAdapter = true)
 data class GetMoviesResponse(
-    @Json(name = "page")
-    val page: Int,
-    @Json(name = "results")
-    val movies: List<Movie>,
-    @Json(name = "total_pages")
-    val totalPages: Int,
-    @Json(name = "total_results")
-    val totalResults: Int
+    @SerializedName("page")
+    val page: Int?,
+    @SerializedName("results")
+    val movies: List<Movie>?,
+    @SerializedName("total_pages")
+    val totalPages: Int?,
+    @SerializedName("total_results")
+    val totalResults: Int?
 )

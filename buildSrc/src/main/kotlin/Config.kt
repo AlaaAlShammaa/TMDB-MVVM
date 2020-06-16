@@ -2,6 +2,7 @@ import kotlin.reflect.full.memberProperties
 
 object Config {
     private const val kotlinVersion = "1.3.72"
+    private const val navigationVersion = "2.3.0-rc01"
 
     object SdkVersions {
         const val compile = 29
@@ -24,6 +25,8 @@ object Config {
         const val fabric = "io.fabric.tools:gradle:1.31.2"
 
         const val ktlint = "com.pinterest:ktlint:0.33.0"
+
+        const val navigationSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
 
     }
 
@@ -59,6 +62,13 @@ object Config {
             const val roomCompiler = "androidx.room:room-compiler:2.2.5"
 
             const val material = "com.google.android.material:material:1.2.0-alpha05"
+
+            val navigation by lazy {
+                listOf(
+                    "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
+                    "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+                )
+            }
 
             val lifecycle by lazy {
                 val version = "2.3.0-alpha01"
@@ -154,6 +164,7 @@ object Config {
             const val moshiConverter = "com.squareup.retrofit2:converter-moshi:2.9.0"
             const val moshiCodeGen = "com.squareup.moshi:moshi-kotlin-codegen:1.9.2"
             const val timber = "com.jakewharton.timber:timber:4.7.1"
+            val smoothBottomBar = "com.github.ibrahimsn98:SmoothBottomBar:1.7.6"
 
             val koin by lazy {
                 listOf(

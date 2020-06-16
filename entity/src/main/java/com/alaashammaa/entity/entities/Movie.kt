@@ -1,37 +1,35 @@
 package com.alaashammaa.entity.entities
 
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import com.google.gson.annotations.SerializedName
 
-@JsonClass(generateAdapter = true)
 data class Movie(
-    @Json(name = "adult")
-    val adult: Boolean,
-    @Json(name = "backdrop_path")
-    val backdropPath: String,
-    @Json(name = "genre_ids")
-    val genreIds: List<Int>,
-    @Json(name = "id")
-    val id: Int,
-    @Json(name = "original_language")
-    val originalLanguage: String,
-    @Json(name = "original_title")
-    val originalTitle: String,
-    @Json(name = "overview")
-    val overview: String,
-    @Json(name = "popularity")
-    val popularity: Double,
-    @Json(name = "poster_path")
-    val posterPath: String,
-    @Json(name = "release_date")
-    val releaseDate: String,
-    @Json(name = "title")
-    val title: String,
-    @Json(name = "video")
-    val video: Boolean,
-    @Json(name = "vote_average")
-    val voteAverage: Double,
-    @Json(name = "vote_count")
-    val voteCount: Int
+    @SerializedName("adult")
+    val adult: Boolean?,
+    @SerializedName("backdrop_path")
+    val backdropPath: String?,
+    @SerializedName("genre_ids")
+    val genreIds: List<Int>?,
+    @SerializedName("id")
+    val id: Int?,
+    @SerializedName("original_language")
+    val originalLanguage: String?,
+    @SerializedName("original_title")
+    val originalTitle: String?,
+    @SerializedName("overview")
+    val overview: String?,
+    @SerializedName("popularity")
+    val popularity: Double?,
+    @SerializedName("poster_path")
+    val posterPath: String?,
+    @SerializedName("release_date")
+    val releaseDate: String?,
+    @SerializedName("title")
+    val title: String?,
+    @SerializedName("video")
+    val video: Boolean?,
+    @SerializedName("vote_average")
+    val voteAverage: Double?,
+    @SerializedName("vote_count")
+    val voteCount: Int?
 )

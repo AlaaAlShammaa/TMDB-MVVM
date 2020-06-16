@@ -36,8 +36,9 @@ dependencies {
     Config.Libs.Jetpack.roomTesting.forEach { testImplementation(it) }
 
     // gson converter
-    api(Config.Libs.Misc.moshi)
-    kapt(Config.Libs.Misc.moshiCodeGen)
+//    api(Config.Libs.Misc.moshi)
+    api(Config.Libs.Misc.gson)
+//    kapt(Config.Libs.Misc.moshiCodeGen)
 
     // unit test
     Config.Libs.Misc.unitTesting.forEach { testImplementation(it) }

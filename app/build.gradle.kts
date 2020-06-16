@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
+    id("kotlin-android")
 }
 
 android {
@@ -77,6 +78,7 @@ dependencies {
     implementation(Config.Libs.Jetpack.room)
     kapt(Config.Libs.Jetpack.roomCompiler)
     Config.Libs.Jetpack.lifecycle.forEach { implementation(it) }
+    Config.Libs.Jetpack.navigation.forEach { implementation(it) }
 
 
     implementation(Config.Libs.Kotlin.common)
@@ -86,8 +88,7 @@ dependencies {
     implementation(Config.Libs.Misc.glide)
     implementation(Config.Libs.Misc.glideRv)
     implementation(Config.Libs.Misc.timber)
-    api(Config.Libs.Misc.moshiConverter)
+    api(Config.Libs.Misc.gson)
+    api(Config.Libs.Misc.retrofitGson)
     Config.Libs.Misc.koin.forEach { implementation(it) }
-
-
 }

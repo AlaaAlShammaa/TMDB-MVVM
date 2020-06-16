@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/movies_fragment"
+        android:title="@string/menu_movies"
+        android:icon="@drawable/ic_video_camera"/>
+
+    <item
+        android:id="@+id/tv_fragment"
+        android:title="@string/menu_tv"
+        android:icon="@drawable/ic_television"/>
+
+    <item
+        android:id="@+id/search_fragment"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_search"/>
+
+
+</menu>
