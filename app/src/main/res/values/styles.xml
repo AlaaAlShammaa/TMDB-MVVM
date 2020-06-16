@@ -7,16 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="regular" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/d_din</item>
+    <style name="TextAppearance.Regular" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/regular</item>
     </style>
 
-    <style name="italic" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/d_din_italic</item>
+    <style name="TextAppearance.Italic" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/italic</item>
     </style>
 
-    <style name="bold" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/d_din_bold</item>
+    <style name="TextAppearance.Bold" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/bold</item>
     </style>
 
 </resources>
