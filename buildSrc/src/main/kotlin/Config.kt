@@ -59,6 +59,7 @@ object Config {
             const val browser = "androidx.browser:browser:1.3.0-alpha01"
             const val pref = "androidx.preference:preference-ktx:1.1.0"
             const val room = "androidx.room:room-runtime:2.2.5"
+            const val roomKtx = "androidx.room:room-ktx:2.2.5"
             const val roomCompiler = "androidx.room:room-compiler:2.2.5"
 
             const val material = "com.google.android.material:material:1.2.0-alpha05"

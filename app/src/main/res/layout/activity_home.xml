@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/headerTV"
-            style="@style/bold"
+            style="@style/TextAppearance.Bold"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="20dp"

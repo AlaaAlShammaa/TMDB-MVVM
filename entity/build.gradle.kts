@@ -28,10 +28,12 @@ android {
 dependencies {
     // kotlin
     implementation(Config.Libs.Kotlin.common)
+    implementation(Config.Libs.Kotlin.coroutinesAndroid)
 
 
     // database
     implementation(Config.Libs.Jetpack.room)
+    implementation(Config.Libs.Jetpack.roomKtx)
     kapt(Config.Libs.Jetpack.roomCompiler)
     Config.Libs.Jetpack.roomTesting.forEach { testImplementation(it) }
 
