@@ -30,11 +30,16 @@ dependencies {
 
     // kotlin
     implementation(Config.Libs.Kotlin.common)
+    implementation(Config.Libs.Kotlin.coroutinesAndroid)
 
     // network
     api(Config.Libs.Misc.retrofit)
     api(Config.Libs.Misc.loggingInterceptor)
     testImplementation(Config.Libs.Misc.mockwebserver)
+
+    // gson
+    api(Config.Libs.Misc.gson)
+    api(Config.Libs.Misc.retrofitGson)
 
     // unit test
     Config.Libs.Misc.unitTesting.forEach { testImplementation(it) }

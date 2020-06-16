@@ -37,12 +37,12 @@ object Config {
             const val common = "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlinVersion"
             const val jvm = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
             const val js = "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlinVersion"
-            const val coroutinesAndroid =
-                "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+            const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
             const val coroutinesTasks =
                 "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$coroutinesVersion"
             const val coroutinesJs =
                 "org.jetbrains.kotlinx:kotlinx-coroutines-core-js:$coroutinesVersion"
+
         }
 
         object Jetpack {
@@ -180,9 +180,11 @@ object Config {
                 listOf(
                     "junit:junit:$junitVersion",
                     "androidx.test:core:$androidxTest",
+                    "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
                     "org.robolectric:robolectric:$robolectricVersion",
                     "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
-                    "androidx.arch.core:core-testing:$archCompomentVersion"
+                    "androidx.arch.core:core-testing:$archCompomentVersion",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.7"
                 )
             }
 
