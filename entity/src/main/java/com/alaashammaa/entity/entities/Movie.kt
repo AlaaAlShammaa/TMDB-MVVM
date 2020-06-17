@@ -13,7 +13,7 @@ data class Movie(
     val backdropPath: String?,
     @SerializedName("id")
     @PrimaryKey
-    val id: Int?,
+    var id: Int?,
     @SerializedName("original_language")
     val originalLanguage: String?,
     @SerializedName("original_title")
@@ -31,7 +31,9 @@ data class Movie(
     @SerializedName("video")
     val video: Boolean?,
     @SerializedName("vote_average")
-    val voteAverage: Double?,
+    var voteAverage: Double?,
     @SerializedName("vote_count")
     val voteCount: Int?
-)
+) {
+
+}
