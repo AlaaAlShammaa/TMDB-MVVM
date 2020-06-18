@@ -19,10 +19,10 @@ class HomeViewModel constructor(private val repository: MoviesRepository) : View
     val movies: LiveData<Resource<List<Movie>>> get() = _movies
 
     init {
-        fetchUpcomingMovies()
+//        fetchUpcomingMovies()
     }
 
-    private fun fetchUpcomingMovies() {
+    fun fetchUpcomingMovies() {
         viewModelScope.launch {
             repository.fetchPopularMovies()
                 .onStart { _movies.value = Resource.loading(null) }

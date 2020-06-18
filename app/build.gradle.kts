@@ -91,4 +91,7 @@ dependencies {
     api(Config.Libs.Misc.gson)
     api(Config.Libs.Misc.retrofitGson)
     Config.Libs.Misc.koin.forEach { implementation(it) }
+
+    // unit testing
+    Config.Libs.Misc.unitTesting.forEach { testImplementation(it) }
 }
