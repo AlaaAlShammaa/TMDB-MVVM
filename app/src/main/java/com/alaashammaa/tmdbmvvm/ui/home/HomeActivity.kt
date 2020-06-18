@@ -28,6 +28,9 @@ class HomeActivity : DatabindingActivity() {
             lifecycleOwner = this@HomeActivity
             moviesAdapter = MoviesAdapter(ArrayList())
         }
+
+        homeViewModel.fetchUpcomingMovies()
+
         homeViewModel.movies.observe(this, Observer { response ->
             when (response.status) {
                 Status.SUCCESS -> {

@@ -18,10 +18,6 @@ class HomeViewModel constructor(private val repository: MoviesRepository) : View
     private val _movies = MutableLiveData<Resource<List<Movie>>>()
     val movies: LiveData<Resource<List<Movie>>> get() = _movies
 
-    init {
-//        fetchUpcomingMovies()
-    }
-
     fun fetchUpcomingMovies() {
         viewModelScope.launch {
             repository.fetchPopularMovies()
