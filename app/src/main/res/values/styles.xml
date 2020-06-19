@@ -8,21 +8,4 @@
         <item name="android:statusBarColor">@color/black</item>
     </style>
 
-    <style name="TextAppearance.Regular" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/regular</item>
-    </style>
-
-    <style name="TextAppearance.Italic" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/italic</item>
-    </style>
-
-
-    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/medium</item>
-    </style>
-
-    <style name="TextAppearance.Bold" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/bold</item>
-    </style>
-
 </resources>
