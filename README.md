@@ -16,6 +16,8 @@ Put simply, we live and breathe community and that's precisely what makes us dif
 
 ## How to build on your environment
 Add your [The Movie DB](https://www.themoviedb.org)'s API key in your `key.properties` file.
+if you don't have such file, please create a new file inside the app module and name it `key.properties`
+Open the file and paste the following snippet in it (Don't forget to add your api key 😉)
 ```xml
 tmdb_api_key=YOUR_API_KEY
 ```
@@ -41,14 +43,14 @@ An Interceptor for requesting every time with a query parameter `api_key`.
 - [Logging Interceptor](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor) - logs HTTP request and response data.
 - [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) - constructing a web server for testing HTTP clients.
 
-## app-ui module
+## App-ui module
 [app-ui module](/app-ui) composed of adapters and viewholders for composing recyclerview's item via databinding. And some factories and extensions related to custom views.
 
 ### Dependencies
 - [Google-Material](https://github.com/material-components/material-components-android) - material Components for Android (MDC-Android) help developers execute Material Design.
 - [Glide](https://github.com/bumptech/glide) - loading image.
 
-## app module
+## App module
 [app module](/app) is the implementation of user interfaces on the application. 
 Based on mvvm architecture (view-databinding-viewmodel-model), coroutines, kotlin flow with the repository pattern.
 
