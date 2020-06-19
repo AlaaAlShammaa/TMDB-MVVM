@@ -76,6 +76,8 @@ dependencies {
     implementation(Config.Libs.Jetpack.fragment)
     implementation(Config.Libs.Jetpack.rv)
     implementation(Config.Libs.Jetpack.room)
+    implementation("androidx.appcompat:appcompat:1.1.0")
+    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
     kapt(Config.Libs.Jetpack.roomCompiler)
     Config.Libs.Jetpack.lifecycle.forEach { implementation(it) }
     Config.Libs.Jetpack.navigation.forEach { implementation(it) }

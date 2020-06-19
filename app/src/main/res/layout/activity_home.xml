@@ -19,7 +19,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F8F8F8"
+        android:background="@color/background"
         tools:context="com.alaashammaa.tmdbmvvm.ui.home.HomeActivity">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -50,8 +50,7 @@
                         android:paddingEnd="20dp"
                         android:text="@string/trending"
                         android:textAppearance="@font/bold"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/material_on_surface_emphasis_medium"                         android:textSize="20sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

@@ -45,5 +45,4 @@ dependencies {
     implementation(Config.Libs.Jetpack.constraint)
     implementation(Config.Libs.Jetpack.fragment)
     implementation(Config.Libs.Jetpack.rv)
-
 }

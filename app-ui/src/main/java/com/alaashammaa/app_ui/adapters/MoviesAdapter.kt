@@ -7,7 +7,7 @@ import com.alaashammaa.app_ui.R
 import com.alaashammaa.app_ui.viewholders.MoviesViewHolder
 import com.alaashammaa.entity.entities.Movie
 
-class MoviesAdapter(private val items: ArrayList<Movie>) : RecyclerView.Adapter<MoviesViewHolder>() {
+class MoviesAdapter(private val items: ArrayList<Movie>, private val movieClickListener: MovieClickListener) : RecyclerView.Adapter<MoviesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder =
         MoviesViewHolder(
@@ -17,13 +17,17 @@ class MoviesAdapter(private val items: ArrayList<Movie>) : RecyclerView.Adapter<
     override fun getItemCount(): Int = items.size
 
     override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
-        holder.bindData(items[position])
+        holder.bindData(items[position],movieClickListener)
     }
 
     fun addMovieItems(movieItems: List<Movie>) {
         items.clear()
         items.addAll(movieItems)
         notifyDataSetChanged()
+    }
+
+    interface MovieClickListener {
+        fun onMovieClick(movie: Movie)
     }
 
 }
