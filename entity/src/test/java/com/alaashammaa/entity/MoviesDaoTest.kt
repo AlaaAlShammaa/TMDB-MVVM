@@ -1,12 +1,8 @@
 package com.alaashammaa.entity
 
-import com.alaashammaa.entity.entities.Movie
 import kotlinx.coroutines.runBlocking
-import org.hamcrest.CoreMatchers
-import org.hamcrest.MatcherAssert
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.Mock
 import org.robolectric.RobolectricTestRunner
 import kotlin.test.assertEquals
 

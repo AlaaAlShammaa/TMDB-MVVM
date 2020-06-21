@@ -8,8 +8,6 @@ import com.alaashammaa.tmdbmvvm.MockData
 import com.alaashammaa.tmdbmvvm.TestCoroutineRule
 import com.alaashammaa.tmdbmvvm.repository.MoviesRepository
 import com.alaashammaa.tmdbmvvm.ui.home.HomeViewModel
-import com.nhaarman.mockitokotlin2.doReturn
-import com.nhaarman.mockitokotlin2.verify
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.delay
@@ -21,6 +19,8 @@ import org.junit.Test
 import org.junit.rules.TestRule
 import org.junit.runner.RunWith
 import org.mockito.Mock
+import org.mockito.Mockito.doReturn
+import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
 

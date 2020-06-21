@@ -138,7 +138,7 @@ object Config {
             const val junitVersion = "4.12"
             const val androidxTest = "1.1.0"
             const val unitTestCoreVersion = "1.2.0"
-            const val robolectricVersion = "4.3"
+            const val robolectricVersion = "4.4-SNAPSHOT"
             const val androidxTestRules = "1.2.0-alpha04"
             const val mockWebServerVersion = "3.9.0"
             const val mockitoKotlinVersion = "2.1.0"
@@ -182,7 +182,7 @@ object Config {
                     "androidx.test:core:$androidxTest",
                     "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
                     "org.robolectric:robolectric:$robolectricVersion",
-                    "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
+                    "org.mockito:mockito-core:3.3.3",
                     "androidx.arch.core:core-testing:$archCompomentVersion",
                     "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.7"
                 )
